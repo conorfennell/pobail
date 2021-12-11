@@ -1,5 +1,5 @@
 """
-Module for managing configuration
+Module for central managing of configuration
 """
 import os
 from datetime import datetime

@@ -13,8 +13,8 @@ def add_request_logging(app):
     """
 
     @app.before_request
-    def start_timer(): # pylint: disable=unused-variable
-        g.start = time.time()
+    def start_timer(): # pylint: disable=unused-variable,E0237
+        g.start = time.time() # pylint: disable=E0237
 
 
     @app.after_request
